@@ -50,21 +50,24 @@ https://trello.com/b/ZrN5Nl3c
 
 <h3 align="left">📂 Repository Structure</h3>
 
-├── .github/workflows/        # CI/CD pipeline configuration (GitHub Actions)
-├── docs/manual/              # Manual test cases and documentation
+### 📂 Repository Structure
+
+```text
+├── .github/workflows/        # CI/CD pipeline (GitHub Actions)
+├── docs/manual/              # Manual test cases and proof
 │   └── TC_001_Ticketing_Flow.md
-├── page-objects/             # Encapsulated Page Objects (POM pattern)
+├── page-objects/             # Page Object Model (POM) files
 │   ├── Header.js
 │   ├── ResultsPage.js
 │   └── ShopPage.js
 ├── tests/
-│   ├── component/            # UI/UX & Responsive tests
-│   ├── e2e/                  # Full user journey flows
-│   └── integration/          # API mocking & data-driven tests
-│       └── fixtures/         # Mock JSON data for API testing
-├── playwright.config.js      # Global configuration & viewport settings
-└── README.md                 # Project documentation (You are here!)
-
+│   ├── component/            # UI/UX & Responsive testing
+│   ├── e2e/                  # Full journey flows
+│   └── integration/          # SSR & Data integrity testing
+│       └── fixtures/         # Mock data files
+├── playwright.config.js      # Framework configuration
+└── README.md                 # Project documentation
+```
 ---
 
 <h3 align="left">🚀 Getting Started</h3>
