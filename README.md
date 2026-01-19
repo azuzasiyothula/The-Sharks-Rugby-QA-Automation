@@ -17,8 +17,8 @@ For this sprint, I focused on building a robust testing foundation for the **Hol
 
 <ul>
   <li>⭐︎ <b>Trello Management:</b> Used for tracking high-level tasks and granular progress via technical checklists.</li>
-  <li>⭐︎ <b>Architecture:</b> Implemented the **Page Object Model (POM)** to separate test logic from selectors.</li>
-  <li>⭐︎ <b>Quality Gates:</b> Integrated **GitHub Actions** to ensure every commit is verified automatically.</li>
+  <li>⭐︎ <b>Architecture:</b> Implemented the <b>Page Object Model (POM)</b> to separate test logic from selectors.</li>
+  <li>⭐︎ <b>Quality Gates:</b> Integrated <b>GitHub Actions</b> to ensure every commit is verified automatically.</li>
 </ul>
 
 ---
@@ -86,7 +86,7 @@ https://trello.com/b/ZrN5Nl3c
 3. Install Playwright Browsers:
    npx playwright install
 
-🚀 **Running Tests**
+⏱️ **Running Tests**
 
 <table width="100%">
   <thead>
@@ -115,16 +115,21 @@ https://trello.com/b/ZrN5Nl3c
   </tbody>
 </table>
 
+---
+
 <h3 align="left">📝 Reporting & Status</h3>
 
 All test runs generate a detailed HTML report including screenshots and video traces of failures.
+<ul>
+  <li>⭐︎ Trello Board Setup & Checklist Definition</li>
+  <li>⭐︎ Framework Initialization (JS + Playwright)</li>
+  <li>⭐︎ Implementation of POM for Shop and Tickets</li>
+  <li>⭐︎ API Mocking for Match Results</li>
+  <li>⭐︎ E2E Checkout Flow Scripting</li>
+  <li>⭐︎ CI/CD Pipeline Integration</li>
+</ul>
 
-⭐︎ Trello Board Setup & Checklist Definition
-⭐︎ Framework Initialization (JS + Playwright)
-⭐︎ Implementation of POM for Shop and Tickets
-⭐︎ API Mocking for Match Results
-⭐︎ E2E Checkout Flow Scripting
-⭐︎ CI/CD Pipeline Integration
+---
 
 <h3 align="left">🐞 Bug Discovery & Strategic Pivots:</h3>
 <ul>
@@ -132,6 +137,8 @@ All test runs generate a detailed HTML report including screenshots and video tr
   <li><b>Finding: SSR Architecture:</b> Identified that Match Results are hardcoded in the HTML via WordPress/Sportspress, leading to a strategic pivot from Network Mocking to **DOM Integrity Validation**.</li>
   <li><b>Resolution: Pointer Event Interception:</b> Resolved a global blocker where the **Cookie Consent Modal** intercepted clicks on navigation elements by implementing a dismissal logic in the Page Objects.</li>
 </ul>
+
+---
 
 <h3 align="left">🧪 Test Coverage Summary</h3>
 <table width="100%">
@@ -167,5 +174,7 @@ All test runs generate a detailed HTML report including screenshots and video tr
   </tr>
 </table>
 
-<h3 align="left">QA Engineer: Azuza Siyothula</h3>
-<p>Project: Hollywoodbets Sharks Web Quality Assurance</p>
+---
+
+<h3 align="center">Fullstack QA Engineer: Azuza Siyothula 👩🏾‍💻</h3>
+<p align="center">Project: Hollywoodbets Sharks Web Quality Assurance</p>
