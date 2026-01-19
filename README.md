@@ -49,7 +49,7 @@ https://trello.com/b/ZrN5Nl3c
 ---
 
 <h3 align="left">📂 Repository Structure</h3>
-```text
+
 ├── .github/workflows/        # CI/CD pipeline configuration (GitHub Actions)
 ├── docs/manual/              # Manual test cases and documentation
 │   └── TC_001_Ticketing_Flow.md
