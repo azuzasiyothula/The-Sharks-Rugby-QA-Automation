@@ -31,20 +31,32 @@ I've structured this repository to provide the fastest feedback loops possible:
 
 ---
 
-<h3 align="left">👾 Tech Stack & Tools:</h3> <p align="left"> <a href="https://playwright.dev" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/bestofjs/bestofjs-web/866d98a0028a2a7f5c9428383835f8e02d847936/public/logos/playwright.svg" alt="Playwright" width="40" height="40"/> </a> <a href="https://www.javascript.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/> </a> <a href="https://github.com/features/actions" target="_blank" rel="noreferrer"> <img src="https://www.google.com/search?q=https://www.vectorlogo.zone/logos/github/github-icon.svg" alt="GitHub Actions" width="40" height="40"/> </a> <a href="https://trello.com" target="_blank" rel="noreferrer"> <img src="https://www.google.com/search?q=https://www.vectorlogo.zone/logos/trello/trello-icon.svg" alt="Trello" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" width="40" height="40"/> </a> </p>
+<h3 align="left">👾 Tech Stack & Tools:</h3> <p align="left">
+  <img src="https://img.shields.io/badge/Playwright-28A745?style=for-the-badge&logo=playwright&logoColor=white" alt="Playwright" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions" />
+  <img src="https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white" alt="Trello" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+</p>
 
 ---
 
 <h3 align="left">📂 Repository Structure</h3>
-├── .github/workflows/    # CI/CD pipeline configuration
-├── page-objects/         # Encapsulated Page Objects (Logic/Selectors)
+```text
+├── .github/workflows/        # CI/CD pipeline configuration (GitHub Actions)
+├── docs/manual/              # Manual test cases and documentation
+│   └── TC_001_Ticketing_Flow.md
+├── page-objects/             # Encapsulated Page Objects (POM pattern)
+│   ├── Header.js
+│   ├── ResultsPage.js
+│   └── ShopPage.js
 ├── tests/
-│   ├── e2e/             # User journey flows
-│   ├── integration/     # API mocking & data-driven tests
-│   └── component/       # UI/UX & Responsive tests
-├── fixtures/             # Mock JSON data for API testing
-├── playwright.config.js  # Global configuration & viewport settings
-└── README.md             # You are here!
+│   ├── component/            # UI/UX & Responsive tests
+│   ├── e2e/                  # Full user journey flows
+│   └── integration/          # API mocking & data-driven tests
+│       └── fixtures/         # Mock JSON data for API testing
+├── playwright.config.js      # Global configuration & viewport settings
+└── README.md                 # Project documentation (You are here!)
 
 ---
 
