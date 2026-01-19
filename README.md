@@ -33,7 +33,7 @@ I've structured this repository to provide the fastest feedback loops possible:
   <li>⭐︎ <b>Component Layer:</b> Focused validation on the Sharks Shop filtering, numerical sorting logic, and mobile navigation.</li>
 </ul>
 
-**Trello Board:**
+📑 **Trello Board:**
 https://trello.com/b/ZrN5Nl3c
 
 ---
@@ -50,8 +50,6 @@ https://trello.com/b/ZrN5Nl3c
 
 <h3 align="left">📂 Repository Structure</h3>
 
-### 📂 Repository Structure
-
 ```text
 ├── .github/workflows/        # CI/CD pipeline (GitHub Actions)
 ├── docs/manual/              # Manual test cases and proof
@@ -66,7 +64,7 @@ https://trello.com/b/ZrN5Nl3c
 │   └── integration/          # SSR & Data integrity testing
 │       └── fixtures/         # Mock data files
 ├── playwright.config.js      # Framework configuration
-└── README.md                 # Project documentation
+└── README.md                 # You're here! 👋🏾
 ```
 ---
 
@@ -76,7 +74,7 @@ https://trello.com/b/ZrN5Nl3c
 ⭐︎ Node.js (v18 or higher)
 ⭐︎ NPM</p>
 
-Installation
+📲 **Installation**
 
 1. Clone the repository:
    git clone https://github.com/azuzasiyothula/sharks-rugby-qa-automation.git
@@ -88,12 +86,34 @@ Installation
 3. Install Playwright Browsers:
    npx playwright install
 
-Running Tests
-Description, Command
-``Run all tests,npx playwright test``
-``Run in UI Mode,npx playwright test --ui``
-``Run specific suite,npx playwright test tests/e2e/``
-``View Report,npx playwright show-report``
+🚀 **Running Tests**
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Description</th>
+      <th align="left">Command</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Run all tests</b></td>
+      <td><code>npx playwright test</code></td>
+    </tr>
+    <tr>
+      <td><b>Run in UI Mode</b></td>
+      <td><code>npx playwright test --ui</code></td>
+    </tr>
+    <tr>
+      <td><b>Run specific suite</b></td>
+      <td><code>npx playwright test tests/e2e/</code></td>
+    </tr>
+    <tr>
+      <td><b>View HTML Report</b></td>
+      <td><code>npx playwright show-report</code></td>
+    </tr>
+  </tbody>
+</table>
 
 <h3 align="left">📝 Reporting & Status</h3>
 
