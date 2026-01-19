@@ -1,7 +1,7 @@
 <h1 align="center">🦈 Hollywoodbets Sharks - QA Automation Suite</h1> 
 <h3 align="center">🎭 Professional Playwright Test Framework with JavaScript</h3>
 
-<p>This repository contains the automated test suite for the Hollywoodbets Sharks official website and ticketing portal. This project was developed as part of a 1-week sprint to ensure the stability of the ticket purchasing flow and the Sharks Shop.</p>
+<p>This repository contains the automated test suite for the Hollywoodbets Sharks' official website and ticketing portal. This project was developed as part of a 1-week sprint to ensure the stability of the ticket purchasing flow and the Sharks Shop.</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Sprint_Status-Completed-success?style=for-the-badge" alt="Status"/>
@@ -13,7 +13,7 @@
 
 <h3 align="left">📋 Sprint Overview</h3>
 
-For this sprint, I focused on building a robust testing foundation for the **Hollywoodbets Sharks** website. The goal was to move beyond simple scripts and implement a maintainable architecture that is realiable.
+For this sprint, I focused on building a robust testing foundation for the **Hollywoodbets Sharks** website. The goal was to move beyond simple scripts and implement a maintainable architecture that is reliable.
 
 ⭐︎ **Trello Management:** Used for tracking high-level tasks and granular progress via technical checklists.
 ⭐︎ **Architecture:** Implemented the **Page Object Model (POM)** to separate test logic from selectors.
@@ -79,7 +79,7 @@ Installation
    npx playwright install
 
 Running Tests
-Description,Command
+Description, Command
 Run all tests,npx playwright test
 Run in UI Mode,npx playwright test --ui
 Run specific suite,npx playwright test tests/e2e/
