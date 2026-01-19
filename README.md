@@ -15,9 +15,11 @@
 
 For this sprint, I focused on building a robust testing foundation for the **Hollywoodbets Sharks** website. The goal was to move beyond simple scripts and implement a maintainable architecture that is reliable.
 
-⭐︎ **Trello Management:** Used for tracking high-level tasks and granular progress via technical checklists.
-⭐︎ **Architecture:** Implemented the **Page Object Model (POM)** to separate test logic from selectors.
-⭐︎ **Quality Gates:** Integrated **GitHub Actions** to ensure every commit is verified automatically.
+<ul>
+  <li>⭐︎ <b>Trello Management:</b> Used for tracking high-level tasks and granular progress via technical checklists.</li>
+  <li>⭐︎ <b>Architecture:</b> Implemented the **Page Object Model (POM)** to separate test logic from selectors.</li>
+  <li>⭐︎ <b>Quality Gates:</b> Integrated **GitHub Actions** to ensure every commit is verified automatically.</li>
+</ul>
 
 ---
 
@@ -25,9 +27,14 @@ For this sprint, I focused on building a robust testing foundation for the **Hol
 This suite follows the Testing Pyramid to ensure a balance between execution speed and feature confidence:
 
 I've structured this repository to provide the fastest feedback loops possible:
-⭐︎ **E2E Layer:** Critical user journeys (Ticket selection to Checkout).
-⭐︎ **Integration Layer:** Intercepting API calls for Match Results using fixtures to test UI edge cases.
-⭐︎ **Component Layer:** Focused validation on the Sharks Shop filtering and mobile navigation.
+<ul>
+  <li>⭐︎ <b>E2E Layer:</b> Critical user journeys (Ticket selection to Checkout).</li>
+  <li>⭐︎ <b>Integration Layer:</b> Validating the data "contract" between the Server-Side Rendered (SSR) backend and the UI for Match Results.</li>
+  <li>⭐︎ <b>Component Layer:</b> Focused validation on the Sharks Shop filtering, numerical sorting logic, and mobile navigation.</li>
+</ul>
+
+**Trello Board:**
+https://trello.com/b/ZrN5Nl3c
 
 ---
 
@@ -69,7 +76,7 @@ I've structured this repository to provide the fastest feedback loops possible:
 Installation
 
 1. Clone the repository:
-   git clone https://github.com/[your-username]/sharks-rugby-qa-automation.git
+   git clone https://github.com/azuzasiyothula/sharks-rugby-qa-automation.git
    cd sharks-rugby-qa-automation
 
 2. Install dependencies:
@@ -80,10 +87,10 @@ Installation
 
 Running Tests
 Description, Command
-Run all tests,npx playwright test
-Run in UI Mode,npx playwright test --ui
-Run specific suite,npx playwright test tests/e2e/
-View Report,npx playwright show-report
+``Run all tests,npx playwright test``
+``Run in UI Mode,npx playwright test --ui``
+``Run specific suite,npx playwright test tests/e2e/``
+``View Report,npx playwright show-report``
 
 <h3 align="left">📝 Reporting & Status</h3>
 
@@ -96,11 +103,11 @@ All test runs generate a detailed HTML report including screenshots and video tr
 ⭐︎ E2E Checkout Flow Scripting
 ⭐︎ CI/CD Pipeline Integration
 
-<h3 align="left">🐞 Bug Discovery & Resolution:</h3>
+<h3 align="left">🐞 Bug Discovery & Strategic Pivots:</h3>
 <ul>
-  <li><b>Issue:</b> Dynamic ID generation in WordPress menu.</li>
-  <li><b>Impact:</b> Brittle tests that fail on page refresh.</li>
-  <li><b>Resolution:</b> Implemented <b>Semantic Locators</b> (Role-based) to ensure test longevity.</li>
+  <li><b>Finding: Shop Sorting Logic Error:</b> Automated numerical assertions identified that the "Price: Low to High" filter is inconsistent (e.g., R49 appearing before R35).</li>
+  <li><b>Finding: SSR Architecture:</b> Identified that Match Results are hardcoded in the HTML via WordPress/Sportspress, leading to a strategic pivot from Network Mocking to **DOM Integrity Validation**.</li>
+  <li><b>Resolution: Pointer Event Interception:</b> Resolved a global blocker where the **Cookie Consent Modal** intercepted clicks on navigation elements by implementing a dismissal logic in the Page Objects.</li>
 </ul>
 
 <h3 align="left">🧪 Test Coverage Summary</h3>
@@ -108,27 +115,32 @@ All test runs generate a detailed HTML report including screenshots and video tr
   <tr>
     <th>Layer</th>
     <th>Method</th>
-    <th>Result</th>
+    <th>Status</th>
+    <th>Notes</th>
   </tr>
   <tr>
     <td><b>Header / Navigation</b></td>
-    <td>Automated (Playwright)</td>
+    <td>Automated</td>
     <td>✅ Pass</td>
+    <td>Verified across Desktop & Mobile viewports.</td>
   </tr>
   <tr>
-    <td><b>Shop Filtering</b></td>
-    <td>Automated (Playwright)</td>
-    <td>✅ Pass</td>
+    <td><b>Shop Sorting</b></td>
+    <td>Automated</td>
+    <td>❌ Fail</td>
+    <td>Defect Logged: Numerical sorting logic error.</td>
   </tr>
   <tr>
-    <td><b>Match Results API</b></td>
-    <td>Integration (Mocked)</td>
+    <td><b>Match Results</b></td>
+    <td>Integration</td>
     <td>✅ Pass</td>
+    <td>Verified via SSR DOM Integrity.</td>
   </tr>
   <tr>
-    <td><b>Ticketing Seat Selector</b></td>
+    <td><b>Ticketing Flow</b></td>
     <td><b>Manual Validation</b></td>
     <td>✅ Pass (Verified stable)</td>
+    <td>Documented in docs/manual/.</td>
   </tr>
 </table>
 
